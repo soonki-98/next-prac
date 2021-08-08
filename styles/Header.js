@@ -5,7 +5,8 @@ export const DivBlock = styled.div`
   z-index: 9999;
   width: 100%;
   height: 102.4px;
-  background-color: midnightblue;
+  background-color: ${(props) =>
+    props.scrollLocation > 1 ? "#FA6473" : "#9E93F5"};
 `;
 
 export const Nav = styled.nav`
